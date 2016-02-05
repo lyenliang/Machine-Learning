@@ -1,5 +1,5 @@
 # Perceptron Learning Algorithm
-# see 02_handout.pdf at http://www.csie.ntu.edu.tw/~htlin/mooc/
+# see http://www.csie.ntu.edu.tw/~htlin/mooc/doc/02_handout.pdf
 
 from __future__ import division
 import ConfigParser
@@ -60,7 +60,6 @@ def init():
 def parseData():
     # parse training data
     Config = ConfigParser.ConfigParser()
-    #Config.read('G:\\MazeMyth\\Research\\MachineLearning\\data.ini')
     Config.read('data.ini')
     sections = Config.sections()
     tmpInputs = Config.options(sections[0])
