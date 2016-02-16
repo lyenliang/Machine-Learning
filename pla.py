@@ -33,19 +33,13 @@ def plotGraph(inputs, outputs, w):
     plt.ylabel('Total Assets')
     plt.show()
 
+# get all x-coordinates in points
 def getXs(points):
-    length = len(points)
-    xs = [None] * length
-    for i in range(length):
-        xs[i] = points[i][1]
-    return xs
+    return [i[1] for i in points]
 
+# get all y-coordinates in points
 def getYs(points):
-    length = len(points)
-    ys = [None] * length
-    for i in range(length):
-        ys[i] = points[i][2]
-    return ys
+    return [i[2] for i in points]
 
 def mult(vec1, vec2):
     # TODO: make sure vec1 and vec2 are of the same size
